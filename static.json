@@ -1,4 +1,9 @@
 {
     "root": "public/",
-    "clean_urls": false
+    "clean_urls": false,
+    "headers": {
+        "/bootstrap/*": {
+            "Access-Control-Allow-Origin": "*"
+        }
+    }
 }
