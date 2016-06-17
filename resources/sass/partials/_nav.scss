@@ -1,0 +1,24 @@
+#main-menu {
+
+    h1 {
+        @include fonts(white, $open, 26, $light);
+        line-height: normal;
+        left: 35px;
+        margin: 0;
+        opacity: 0;
+        top: -10px;
+        transition: all .45s linear;
+        text-transform: uppercase;
+        word-wrap: break-word;
+
+        &.actived {
+            opacity: 1;
+            top: 0;
+        }
+    }
+
+    #nav-menu {
+        color: white;
+        font-size: rem(24);
+    }
+}

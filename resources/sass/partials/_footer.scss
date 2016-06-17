@@ -1,0 +1,10 @@
+footer {
+    padding-bottom: 15px;
+    padding-top: 15px;
+
+    span {
+        cursor: default;
+        @include fonts(#bcc8cd, $open, 17, $regular);
+        strong { @include fonts(#e8eaea, $open, 21, $light); }
+    }
+}
