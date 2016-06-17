@@ -7,24 +7,27 @@
         e.preventDefault();
         TweenMax.to('#news', 0.4, { autoAlpha: 1, ease: Expo.easeOut });
 
-        $.getJSON( newUrl, function(data) {
+        $.getJSON(newUrl, function(data) {
+            var _html = '';
             $.each(data, function(key, item) {
-                var _html = '<article class="col-lg-12 col-md-12 col-sm-12 col-xs-12 relative new">'+
-                                '<div class="block new-preview" data-new="open" id="'+ item.id +'">'+
-                                    '<div class="row">'+
-                                        '<figure class="col-lg-2 col-md-2 col-sm-2 col-xs-2">'+
-                                            '<img class="center-block img-responsive img-circle" src="http://lorempixel.com/100/100" alt="">'+
-                                        '</figure>'+
-                                        '<h2 class="col-lg-10 col-md-10 col-sm-10 col-xs-10">'+ item.title +'</h2>'+
-                                    '</div>'+
+                _html += '<article class="col-lg-12 col-md-12 col-sm-12 col-xs-12 relative new">'+
+                            '<div class="block new-preview" data-new="open" id="'+ item.id +'">'+
+                                '<div class="row">'+
+                                    '<figure class="col-lg-2 col-md-2 col-sm-2 col-xs-2">'+
+                                        '<img class="center-block img-responsive img-circle" src="http://lorempixel.com/100/100" alt="">'+
+                                    '</figure>'+
+                                    '<h2 class="col-lg-10 col-md-10 col-sm-10 col-xs-10">'+ item.title +'</h2>'+
                                 '</div>'+
-                                '<div class="block new-content"></div>'+
-                            '</article>';
-
-                $('#news').append( _html );
-                TweenMax.to('#news .new', 0.5, { css: { left: 0, opacity: 1 }, autoAlpha: 1, ease: Elastic.easeOut });
+                            '</div>'+
+                            '<div class="block new-content"></div>'+
+                        '</article>';
             });
-        } );
+
+            $('#news').html( _html );
+        })
+        .complete(function() {
+            TweenMax.staggerTo('#news .new', 0.7, { css: { left: 0, opacity: 1 }, autoAlpha: 1, ease: Elastic.easeOut }, 0.2);
+        });
     }
 
     function newEvent() {
@@ -39,19 +42,15 @@
     }
 
     function openNew($this) {
-        console.log( $this );
         var _title  = $this.find('h2'),
             _new = $this.closest('.new').find('.new-content'),
             _id  = $this.context.id;
-        console.log( _new );
 
         $('h1').toggleClass('actived');
 
         $.getJSON( newUrl, function(data) {
-            // console.log( data );
             $.each(data, function(key, item) {
                 if ( _id == item.id ) {
-                    console.log( item );
                     var _html = '<div class="row">'+
                             '<figure class="col-lg-3 col-md-3 col-sm-3 col-xs-3">'+
                                 '<img class="img-responsive" src="'+ item.image +'" alt="">'+
@@ -63,8 +62,6 @@
                         '</div>';
 
                     _new.html( _html );
-                    console.log( _html );
-                    console.log( _new.html() );
                 }
             });
         } );
