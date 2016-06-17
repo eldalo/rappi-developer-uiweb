@@ -1,1 +1,76 @@
-#loader {}
+
+#preload {
+    background: rgba(59,78,94, 1);
+    background: -moz-linear-gradient(top, rgba(59,78,94,1) 0%, rgba(255,255,255,0.95) 100%);
+    background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(59,78,94,1)), color-stop(100%, rgba(255,255,255,0.95)));
+    background: -webkit-linear-gradient(top, rgba(59,78,94,1) 0%, rgba(255,255,255,0.95) 100%);
+    background: -o-linear-gradient(top, rgba(59,78,94,1) 0%, rgba(255,255,255,0.95) 100%);
+    background: -ms-linear-gradient(top, rgba(59,78,94,1) 0%, rgba(255,255,255,0.95) 100%);
+    background: linear-gradient(to bottom, rgba(59,78,94,1) 0%, rgba(255,255,255,0.95) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#3b4e5e', endColorstr='#ffffff', GradientType=0 );
+    overflow: inherit;
+
+    #loader {
+        animation: spin 2s linear infinite;
+        border: 3px solid transparent;
+        border-radius: 50%;
+        border-top-color: #3b4e5e;
+        display: block;
+        height: 150px;
+        left: 50%;
+        margin: -75px 0 0 -75px;
+        position: relative;
+        top: 50%;
+        width: 150px;
+        z-index: 1001;
+
+        &:before {
+            animation: spin 3s linear infinite;
+            border: 3px solid transparent;
+            border-radius: 50%;
+            border-top-color: #ff6654;
+            bottom: 5px;
+            content: '';
+            left: 5px;
+            position: absolute;
+            right: 5px;
+            top: 5px;
+        }
+        
+        &:after {
+            animation: spin 1.5s linear infinite;
+            border: 3px solid transparent;
+            border-radius: 50%;
+            border-top-color: #fff;
+            bottom: 15px;
+            content: '';
+            left: 15px;
+            position: absolute;
+            right: 15px;
+            top: 15px;
+        }
+    }
+    
+    .loader-section {
+        position: fixed;
+        height: 100%;
+        top: 0;
+        transform: translateX(0);
+        width: 51%;
+        z-index: 1000;
+
+        &.section-left  { left: 0; }
+        &.section-right { right: 0; }
+    }
+}
+
+.popup {
+    background-color: rgba(255,255,255, .6);
+    height: 100%;
+    left: 0;
+    overflow: scroll;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1001;
+}

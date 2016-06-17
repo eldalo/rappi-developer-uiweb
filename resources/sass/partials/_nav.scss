@@ -1,24 +1,27 @@
 #main-menu {
 
     h1 {
-        @include fonts(white, $open, 26, $light);
-        line-height: normal;
-        left: 35px;
+        @include fonts(white, $open, 23, $light);
+        line-height: 23px;
+        left: 40px;
         margin: 0;
         opacity: 0;
         top: -10px;
-        transition: all .45s linear;
+        transition: all .5s linear;
         text-transform: uppercase;
-        word-wrap: break-word;
+        width: 95%;
 
-        &.actived {
-            opacity: 1;
-            top: 0;
+        &.actived { opacity: 1; top: 12px; }
+            
+        span {
+            animation: pulse-opacity 0.4s alternate infinite ease-in-out;
+            display: inline-block;
+            &:nth-child(odd) { animation-delay: 0.4s; }
         }
     }
 
     #nav-menu {
         color: white;
-        font-size: rem(24);
+        font-size: rem(33);
     }
 }

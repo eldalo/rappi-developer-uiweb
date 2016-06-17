@@ -3328,3 +3328,12 @@
   -webkit-animation-name: slideOutUp;
   animation-name: slideOutUp;
 }
+
+@keyframes spin {
+    0%   { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+@keyframes pulse-opacity {
+    to { opacity: .5; transform: scale(0.8); }
+}

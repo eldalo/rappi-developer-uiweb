@@ -1,0 +1,32 @@
+[
+  {
+    "id": 1,
+    "title": "ABSOLUTAMENTE TODO LO QUE DEBES SABER DE ′PES 2017′",
+    "content": "Una de las formas de ver la situación financiera de las compañías de tecnología es midiendo el tamaño de sus vitrinas en E3. Y esta vez, Konami solo alquilo uno de los cuartos de reuniones del segundo piso del Centro de Convenciones de Los Ángeles, para mostrar un solo juego: ‘PES 2017’. Estuvimos hablando con el gerente de producto del juego, Adam Bhatti, para conocer las nuevas funciones del simulador de juego y después tuvimos la oportunidad de echar unos partidos. Siguiendo un poco la línea editorial de las otras notas de E3, primero voy a compartir los detalles –pocos, esta vez– del nuevo simulador de fútbol de Konami.",
+    "image": "http://lorempixel.com/300/300"
+  },
+  {
+    "id": 2,
+    "title": "‘INJUSTICE 2’ LUCE INCREÍBLE, PERO QUIERE HACERSE ZANCADILLA",
+    "content": "Durante la mañana de este jueves pude asistir a una presentación en vivo de ‘Injustice 2’, el nuevo título de peleas de Warner Bros. y Netherrealm que simplemente luce como todo lo que puedes esperar de la saga: buenos gráficos, interesante selección de personajes (habrá 28 en total), un sistema de pelea que funciona por venir de ‘Mortal Kombat’ y todo tipo de guiños a los cómics. Pero hay un elemento que simplemente no me convence: su sistema de armaduras. Durante el demo en vivo mostraron cómo funciona el sistema de armaduras, que aparecía en el primer tráiler del juego. Al principio supuse que se trataba de distintos estilos de pelea para cada personaje, al estilo de ‘Mortal Kombat X’, pero es algo totalmente diferente. El sistema de armaduras es la intención de los desarrolladores por agregar un elemento RPG.",
+    "image": "http://lorempixel.com/300/300"
+  },
+  {
+    "id": 3,
+    "title": "APPLE EXPLICÓ LAS RAZONES POR LAS QUE NO LLEGARÁ IMESSAGE A ANDROID",
+    "content": "“Cuando le pregunté a un ejecutivo senior de Apple por qué iMessage no sería llevado a otras plataformas, él me dio dos respuestas. Primero, dijo que Apple consideraba que sus 1.000 millones de usuarios activos proporcionaban datos suficientes para cualquier aprendizaje de inteligencia artificial en el que esté trabajando la compañía. Y, segundo, tener una plataforma de mensajería superior que solo funcione en dispositivos de Apple ayudará a vender esos dispositivos”, dice el medio especializado en Apple.",
+    "image": "http://lorempixel.com/300/300"
+  },
+  {
+    "id": 4,
+    "title": "EN FACEBOOK PRONTO TODO “SERÁ VIDEO, VIDEO, VIDEO”, DICE UNA EJECUTIVA",
+    "content": "Nicola Mendelsohn, vicepresidenta de Facebook para Europa, Medio Oriente y África, dijo ayer martes en un congreso de la revista Fortune en Londres que en cinco años todas las publicaciones en Facebook serán videos, y que definitivamente se verá en móviles. Mendelsohn dijo que si tuviera que apostar, diría que todo “será video, video, video”. Según la ejecutiva, el contenido de video en Facebook está creciendo mucho más rápido de lo que ha anticipado la compañía. Además, los videos se han impulsado gracias a la herramienta de videos en vivo. De acuerdo con Mendelsohn, los videos en vivo reciben diez veces más comentarios que los videos pregrabados.",
+    "image": "http://lorempixel.com/300/300"
+  },
+  {
+    "id": 5,
+    "title": "LA CUENTA DE TWITTER CON MAYOR NÚMERO DE SEGUIDORES FUE HACKEADA",
+    "content": "Katy Perry es la celebridad con mayor número de seguidores en Twitter. Con más de 89 millones de seguidores, la cantante se ha ganado el primer lugar en la red social de 140 caracteres. Sin embargo, y justamente por tener tantos seguidores, Perry no está exenta de sufrir ataques cibernéticos, como el que fue víctima hace pocas horas, reportó TechCrunch.",
+    "image": "http://lorempixel.com/300/300"
+  }
+]

@@ -58,23 +58,23 @@ gulp.task('scripts', function() {
 });
 
 gulp.task('bower_styles', function() {
-    return gulp.src( bowerFiles('**/' + files.css) )
-            .pipe( concat('components.min.css') )
-            .pipe( minifyCSS() )
-            .pipe( gulp.dest(paths.out.styles) )
-            .pipe( notify( function(file) {
-                return 'Bower CSS Compiler file: '+ file.relative;
-            }) );
+    // return gulp.src( bowerFiles('**/' + files.css) )
+    //         .pipe( concat('components.min.css') )
+    //         .pipe( minifyCSS() )
+    //         .pipe( gulp.dest(paths.out.styles) )
+    //         .pipe( notify( function(file) {
+    //             return 'Bower CSS Compiler file: '+ file.relative;
+    //         }) );
 });
 
 gulp.task('bower_scripts', function() {
-    return gulp.src( bowerFiles('**/' + files.js) )
-            .pipe( concat('components.min.js') )
-            .pipe( uglify() )
-            .pipe( gulp.dest(paths.out.scripts) )
-            .pipe( notify( function(file) {
-                return 'Bower Compiler file: '+ file.relative;
-            }) );
+    // return gulp.src( bowerFiles('**/' + files.js) )
+    //         .pipe( concat('components.min.js') )
+    //         .pipe( uglify() )
+    //         .pipe( gulp.dest(paths.out.scripts) )
+    //         .pipe( notify( function(file) {
+    //             return 'Bower Compiler file: '+ file.relative;
+    //         }) );
 });
 
 gulp.task('browser_sync', function() {

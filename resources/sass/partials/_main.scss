@@ -9,6 +9,7 @@
         .new {
             margin-bottom: 15px;
             position: relative;
+            left: -100px;
             opacity: 0;
 
             .new-content {
@@ -42,8 +43,10 @@
                 height: 120px;
                 padding: 10px 15px;
 
+                &.active,
                 &:hover {
                     h2 { color: #bcc8cd; }
+                    img { filter: grayscale(0); -webkit-filter: grayscale(0); }
                 }
 
                 h2 {
@@ -55,6 +58,12 @@
                     text-transform: uppercase;
                     transition: color .25s ease-in-out;
                     word-wrap: break-word;
+                }
+
+                img {
+                    filter: grayscale(1); 
+                    -webkit-filter: grayscale(1);
+                    transition: all .35s ease-in-out;
                 }
             }
         }
